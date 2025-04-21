@@ -1,0 +1,41 @@
+🛡️ Image Encryption Tool using XOR and Tkinter GUI
+
+This project is a simple yet powerful image encryption and decryption tool built with Python using the Tkinter GUI library. 
+It allows users to select an image file (.jpg or .png), provide a numeric key, and encrypt/decrypt the image using XOR byte manipulation.
+
+✨ Features
+🔐 Encrypts any .jpg or .png file using a numeric key
+🔓 Decrypts an encrypted image by reusing the same key
+🖱️ Simple graphical user interface (GUI) built with Tkinter
+⚡ Fast, lightweight, and easy to use
+🧠 How It Works
+
+The image is opened in binary mode and read into a bytearray. Each byte is then XOR-ed with the numeric key provided by the user. 
+Since XOR is a reversible operation, reapplying the same key decrypts the image.
+
+Note: If you encrypt the image once with a key, you must use the same key to decrypt it successfully.
+Tools Used
+Python 🐍
+Tkinter (for GUI)
+File handling and byte-level XOR logic
+🚀 How to Run
+1. Clone this repository:
+   git clone https://github.com/Favson/image-encryption-tool.git
+   cd image-encryption-tool
+2. Run the script:
+   python encryptor.py
+3. In the GUI:
+Click "Encrypt"
+Choose your image file
+Enter a numeric key
+The image will be encrypted or decrypted (depending on its current state)
+⚠️ Warning
+
+- This modifies the original image file in place. Always keep a backup before encryption!
+- Make sure to remember your encryption key. Without it, the image cannot be decrypted.
+
+🙌 Acknowledgments
+Built with 💜 by Favour Adebisi
+📬 Contact
+GitHub: https://github.com/Favson
+LinkedIn: https://www.linkedin.com/in/favour-adebisi
